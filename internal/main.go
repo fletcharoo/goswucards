@@ -24,7 +24,23 @@ type set struct {
 var sets = []set{
 	{
 		abbreviation: "SOR",
-		cardNum:      5,
+		cardNum:      252,
+	},
+	{
+		abbreviation: "SHD",
+		cardNum:      262,
+	},
+	{
+		abbreviation: "TWI",
+		cardNum:      257,
+	},
+	{
+		abbreviation: "JTL",
+		cardNum:      262,
+	},
+	{
+		abbreviation: "LOF",
+		cardNum:      264,
 	},
 }
 
