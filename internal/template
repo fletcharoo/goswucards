@@ -1,0 +1,22 @@
+package goswucards
+
+import (
+	"embed"
+)
+
+//go:embed images/*
+var ImagesFS embed.FS
+
+type Card struct {
+	ID string `json:"id"`
+	Name string `json:"name"`
+}
+
+var Cards = map[string]Card{
+{{- range $card := . }}
+	"{{ $card.ID }}": {
+		ID: "{{ $card.ID }}",
+		Name: "{{ $card.Name }}",
+	},
+{{- end }}
+}
